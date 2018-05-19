@@ -1,0 +1,49 @@
+/* phần chung, các element kế thừa */
+body{
+
+}
+input {
+    height: 25px;
+    size: 270px;
+}
+
+/* .clear{
+   float: none;
+}
+.float-left{
+    float: left;
+} */
+/* end phần chung */
+header{
+    background-color: yellow;
+}
+
+
+#header-search-cart{
+    display: flex;
+}
+
+#logo-site p{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+
+#searh-product .search-content{
+    /* tạo borber bên trái */
+    border-top-left-radius: 2.467em;
+    border-bottom-left-radius: 2.467em;
+}
+.search-content::-webkit-input-placeholder{
+    font-size: 20px;
+}
+
+
+.list-categories-search{
+   
+    font-size: 25px;
+    /* tạo cảm giác gán liền với select */
+    border:none;
+
+    
+}

@@ -1,0 +1,421 @@
+/* phần chung, các element kế thừa */
+body,html{
+    box-sizing: border-box;
+    /* image full screen */
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+input {
+    height: 25px;
+    size: 270px;
+}
+ul{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+    font-weight: 300;
+    font-weight: bold;
+    color:white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Changa", sans-serif;
+}
+/* .clear{
+   float: none;
+}
+.float-left{
+    float: left;
+} */
+
+.fa{
+    color: white;
+    font-size: 20px;
+}
+/* end phần chung */
+
+body{
+    position: relative;
+}
+.header{
+    /* slide nằm phía trong của header */
+    position: absolute;
+    top:0;
+    
+}
+
+
+
+header{
+    
+    /* font-family: "Changa", sans-serif; */
+    
+    /*sự khác nhau của padding và margin: padding bao lun content-->set background... chứa nó */
+    /* padding:0  50px 0 50px;  */
+
+    width: 100%;
+}
+
+.header ul li{
+    display: inline;
+    size: 50px;
+    margin: 6px;;
+}
+
+.top-header{
+    background-color: #e83e8c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-user-login{
+    
+}
+
+/* nav */
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(0, 0, 0, 0.5);;
+
+    /* position: fixed; */
+}
+.header-nav{
+   
+   
+}
+
+.header-nav ul li{
+    margin:-15px;
+}
+.header-nav ul li::before{
+    content: '____';
+    color: white;
+    position: relative;
+    top:-20px;
+    left:50px;
+    /* ẩn đi khi ko chọn */
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.header-nav ul li::after{
+    content: '_____';
+    color: white;
+    position: relative;
+    top:5px;
+    right:55px;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+/* hover với after */
+.header-nav ul li:hover::after{
+    content: '_____';
+    color: white;
+    position: relative;
+    top:5px;
+    right:15px;
+    /* hiện từ từ */
+    transition: all 0.5s ease;
+    /* hiện khi select */
+    opacity:1;
+}
+.header-nav ul li:hover::before{
+    content: '____';
+    color: white;
+    position: relative;
+    top:-20px;
+    left:15px;
+   
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.head-button{
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+
+    background-color: transparent;
+    margin:30px;
+    padding: 5px;
+}
+
+.head-button:hover{
+    background-color:rgb(119, 0, 255);
+}
+
+.header-nav ul .active::after {
+    opacity: 1;
+}
+.header-nav ul .active::before {
+    opacity: 1;
+}
+/* end nav */
+/* end of header */
+
+
+
+/**************** introduction***************/
+.site-slider{
+    background-image: url("img/1.jpg");
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* margin-left: 100%; */
+    
+    
+
+    /* display: flex;
+    justify-content: space-between; */
+
+  
+
+    /* opacity: 0.3; */
+    background-color: transparent;
+   
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+.site-introduction{
+    text-align: center;
+   
+
+}
+
+.slide-button{
+    font-size: 35px;
+    width: 60px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+
+
+
+}
+.left{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.right{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
+.site-introduction h3{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+
+
+    
+        visibility: visible;
+        animation-delay: 0.4s;
+    
+}
+
+
+.site-introduction h2{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+   
+    line-height: 70px;
+    margin-bottom: 20px;
+
+
+    visibility: visible;
+    animation-delay: 0.5s;
+}
+.site-introduction p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    
+
+    visibility: visible;
+    animation-delay: 0.9s;
+}
+
+.introduction-download{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-top-color: rgb(255, 255, 255);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(255, 255, 255);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-left-width: 1px;
+
+    margin: 5px;
+
+    background-color: transparent;
+
+}
+
+/* animation */
+.site-introduction{
+     animation-duration: 3s;
+  animation-name: slidein;
+  animation-delay: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* end of introduction */
+
+
+/********* tranding-album *******/
+.tranding-album{
+    text-align: center;
+}
+.tranding-album p,h2,h3 {
+    color:black;
+}
+
+
+.tranding-album h2{
+    font-size: 40px;
+    line-height: 26px;
+    color: #E43A90;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    padding-bottom: 25px;
+}
+.tranding-album h2::before {
+    color: black;
+    content: "TRENDING ALBUMS";
+}
+.tranding-album>h2::after{
+    color: #E43A90;
+    content: "____@@@_____";
+    /* position: relative;
+    top:40px;
+    right:35%; */
+    display: block;
+    text-align: center; 
+}
+
+/* end of tranding-album */
+
+
+/*********album-boxs***************/
+.album-boxs{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+}
+
+.album-box{
+    /* flex-shrink:2; */
+    /* flex-basis:50%; */
+    margin:  5px;
+    position: relative;
+    
+
+    box-shadow: 0 0 8px 8px black;
+}
+
+
+.album-details{
+    display: flex;
+    justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.7);
+    /* background-color: black; */
+    position: absolute;
+    bottom: 0%;
+
+    /* hay bị lỗi : kết hợp flex và position */
+    width: 100%;
+    
+}
+
+.album-details .content{
+    /* float: left; */
+    /* display: inline; */
+    
+    /* flex-grow: 7; */
+    color: white;
+    
+}
+.album-details .icon{
+    /* float:right; */
+    text-align: right;
+ 
+    
+}
+.icon .fa-headphones{
+    color:pink;
+    font-size: 100px;
+    
+  
+}
+
+
+/* animation hình : selector parent hover---> ảnh hưởng: selector con*/
+ /* .album-box:hover  , .album-box:focus .album-details{
+    transform: scale(1.2);
+    transition: all .5s;
+
+    background-color: #e83e8c;
+    z-index: 2;
+} */
+
+
+.box-thumb  img
+{
+    object-fit: scale-down;
+    max-width: 100%;
+    /* width: 250px;
+     height: 500px; */
+}
+.album-box:hover img{
+    transform: scale(1.2);
+    
+    transition: all .5s;
+
+    visibility: visible;
+    opacity: 0.5;
+}
+/*               end of album boxs                   */
