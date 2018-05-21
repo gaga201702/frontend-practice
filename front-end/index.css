@@ -1,0 +1,156 @@
+/********** phần chung ***********/
+body{
+
+}
+a{
+
+}
+ul{
+
+}
+li{
+
+}
+
+h5,h6{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: normal;
+
+}
+/*********** end phần chung **********/
+.list-product-hot{
+  
+
+}
+.row-product{
+    display: flex;  
+}
+
+.product{
+    width: 30%; /* số này < 100/3 --> nếu ko product đứng lẻ 1 row-product sẽ bị vỡ
+                (nếu ko có row product)*/
+
+    position: relative;
+
+    margin: 1%;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.product:hover{
+    /* cách 1 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* cách 2 */
+    /* transform: scale(1.2);
+    transition: all .5s; */
+    /* transition-duration: 0.5s; */
+    /* visibility: visible; */
+    /* z-index: 1; */
+    /* opacity: 0.5; */
+
+    /* cách 3 */
+    /* animation-name: zoom-product;
+    animation-delay: 0.5s;
+    animation-duration: 3s; */
+
+    /* cách 4 */
+ 
+
+    
+}
+/* @keyframes zoom-product{
+    from{
+        margin-left: 100%;
+        width: 300%; 
+    }
+    to{
+        margin-left: 0%;
+        width: 0%;
+    }
+} */
+ /* cách 4 */
+.product:hover  img{
+    transform: rotate(-20deg);
+    transition: all .5s;
+}
+
+
+
+.product img{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #ddd;
+    border-radius: 4px; */
+}
+
+.product-sale{
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       /* z-index: 2; */
+
+
+       background: rgba(255, 0, 0, 0.678);
+       color: white;
+       font-weight: bold;
+       padding: 1%;
+
+}
+
+.price-product{
+    color:red;
+    font-size: 22px;
+
+    text-align: right;
+
+}
+.price-product .price-old{
+    color: thistle;
+    font-size: 18px;
+    text-decoration: line-through;
+
+    padding: 10px;
+}
+.product  .name-product{
+    font-size: 22px;
+}
+
+.rate-product{
+    font-size: 18px;
+    color: thistle;
+}
+.rate-product .rated{
+    /* color: white; */
+
+    background:yellow; 
+}
+.rate-product .unrated{
+    color:red;
+    /* color: rgba(198, 192, 207, 0.11); */
+}
+
+.like-product{
+    display: inline;
+}
+.like-product > .fa-heart{
+    /* color: red; */
+    color: thistle;
+    /* background: wheat; */
+    font-size: 25px;
+}
+
+.add-to-cart-product{
+    float: right;   
+
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+    border: red solid 1px;
+    
+}
+
+
